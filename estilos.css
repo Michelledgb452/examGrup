@@ -1,0 +1,193 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+header{
+    display: flex;
+    min-height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    background: radial-gradient(circle at top left, #EFB810, #fff);
+    color: #000;
+}
+
+.encabezado{
+    height: 80px;
+}
+
+.nombre{
+    color: #fff;
+    font-weight: 700;
+}
+
+.nombre:hover{
+    color: #000;
+}
+
+.nav-link{
+    color: #EFB810;
+    margin-right: 25px;
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    color: #000;
+    opacity: 20;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+nav a{
+    font-weight: 600;
+    padding: 20px;
+}
+nav a:hover{
+    color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+small{
+    font-size: 15px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(255, 255, 255),#EFB810);
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    background-image: url(https://www.cerocero.com.mx/wp-content/uploads/2022/11/qatar-2022-partidos-1.jpg);
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 80px;
+    color: #EFB810;
+    margin-right: 750px;
+}
+
+.hero p {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 350px;
+}
+
+nav {
+    background: #EFB810;
+    height: 80px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav a {
+    flex: 1;
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    transition: .2s ease-in-out all;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: #fff;
+}
+
+nav .indicador {
+    width: 0px;
+    height: 7px;
+    background: #0278ff;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-out all;
+    /* transform: translate(-500px); */
+}
+
+.seccion {
+    min-height: 100vh;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.seccion .card {
+    background: #fff;
+    height: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.seccion h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.seccion p {
+    line-height: 38px;
+    margin-bottom: 40px;
+    color: #494949;
+    font-size: 20px;
+}
+
+.seccion img {
+    width: 100%;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav a {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,154 @@
+html {
+	scroll-behavior: smooth;
+}
+small{
+	font-size: 15px;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(rgb(230, 74, 74),pink);
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 80px);
+}
+
+.hero h1 {
+	font-size: 80px;
+    color: #f0f0f0;
+}
+
+.hero p {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: white;
+}
+
+nav {
+	background: #fff;
+	height: 80px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+}
+
+nav a {
+	flex: 1;
+	height: 100%;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #000;
+	transition: .2s ease-in-out all;
+	font-weight: 500;
+}
+
+nav a:hover {
+	background: #f0f0f0;
+}
+
+nav .indicador {
+	width: 0px;
+	height: 7px;
+	background: #113cfc;
+	position: absolute;
+	bottom: 0;
+	transition: .3s ease-out all;
+	transform: translate(-500px); 
+}
+
+.seccion {
+	min-height: 100vh;
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+
+	padding-top: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.seccion .card {
+	background: #fff;
+	height: 90%;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.seccion h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.seccion p {
+	line-height: 38px;
+	margin-bottom: 40px;
+	color: #494949;
+	font-size: 20px;
+}
+
+.seccion img {
+	width: 100%;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+
+/* .card img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.card .hover{
+	width: 20%;
+	height: 50vh;
+	background-color: rgb(56, 53, 53,0.568);
+	position: absolute;
+	 top: 0; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: .4s all;
+}
+.hover p{
+	color: aliceblue;text-shadow: 1px 1px 1px black;
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+.card:hover .hover{
+	width: 100%;
+} */
+@media screen and (max-width: 800px) {
+	nav a {
+		font-size: 14px;
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	nav a {
+		font-size: 12px;
+	}
+}
